@@ -1,4 +1,4 @@
-<h1>Listing users</h1>
+<h1 id = "h1">Listing users</h1>
 
 <table>
   <thead>
@@ -25,3 +25,9 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    var h1 = $("#h1").html("javascriptが動いてるよ");
+  });
+</script>

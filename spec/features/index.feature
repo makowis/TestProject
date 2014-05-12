@@ -1,7 +1,7 @@
 # encoding: utf-8
 # language: ja
 
-機能: top page
-  シナリオ: index.html の静的表示
+機能: 表示確認
+  シナリオ: users/index の静的表示
     前提 "users/" を表示する
-    * レスポンスステータスが 200
+    ならば レスポンスステータスが 200

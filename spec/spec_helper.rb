@@ -27,6 +27,12 @@ require 'rspec/autorun'
 require 'turnip'
 require 'turnip/capybara'
 
+Capybara.javascript_driver = :poltergeist
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, :js_errors => false, :timeout => 60)
+end
+
+
 RSpec.configure do |config|
   # ## Mock Framework
   #
