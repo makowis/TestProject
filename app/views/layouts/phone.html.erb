@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestProject</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div style="border: 5px solid red; padding: 5px;">
+    スマートフォン用layout
+    <%= yield %>
+  </div>
+</body>
+</html>
