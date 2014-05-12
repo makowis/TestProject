@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 gem 'sass-rails', '~> 4.0.3'
@@ -22,6 +21,7 @@ gem 'mysql2'
 gem 'awesome_print'
 gem "browser"
 gem "paranoia", "~> 2.0"
+gem 'thin'
 
 group :development, :test do
   gem 'quiet_assets'
@@ -35,4 +35,9 @@ group :development, :test do
   gem 'colorize_unpermitted_parameters'
   gem "timecop"
   gem "annotate", github: "ctran/annotate_models"
+
+  gem 'rspec-rails'
+  gem 'capybara-webkit'
+  gem 'poltergeist'
+  gem 'turnip'
 end
